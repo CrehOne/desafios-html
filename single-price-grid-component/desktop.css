@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 600px) {
+    main {
+        margin: auto;
+        min-width: 600px;
+        
+        margin-top: 50px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.296);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    #pricing, #features {
+        width: 300px;
+        height: 280px;
+        display: inline-block;
+        
+    }
+
+    #pricing {
+        float: left;
+    }
+
+    #features {
+        float: right;
+    }
+}
+
+
+

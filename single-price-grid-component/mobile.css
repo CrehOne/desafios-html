@@ -74,6 +74,15 @@ main {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+#button:hover {
+    background-color: hsl(71, 95%, 53%);
+}
+
+#button a {
+    text-decoration: none;
+    color: white;
+}
+
 #features {
     background-color: hsl(179, 71%, 46%);
     color: white;
