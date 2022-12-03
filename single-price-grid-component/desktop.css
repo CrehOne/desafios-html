@@ -3,7 +3,7 @@
 @media screen and (min-width: 600px) {
     main {
         margin: auto;
-        min-width: 600px;
+        min-width: 620px;
         margin-top: 50px;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.296);
         border-radius: 10px;
@@ -11,7 +11,7 @@
     }
 
     #pricing, #features {
-        width: 300px;
+        width: 310px;
         height: 280px;
         display: inline-block;
         
