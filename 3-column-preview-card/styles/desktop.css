@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 650px) {
+    main {
+        width: 900px;
+    }
+
+    .segment {
+        display: inline-block;
+    }
+
+    #sedans {
+        float: left;
+    }
+
+    #suvs {
+        float: inline-end;
+    }
+
+    #luxury {
+        float: right;
+    }
+}
