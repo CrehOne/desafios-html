@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="desktop.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/44b1105924.js" crossorigin="anonymous"></script>
   
   <title>Frontend Mentor | Ping coming soon page</title>
 
@@ -15,20 +19,44 @@
   </style>
 </head>
 <body>
+  <div id="mainText">
+    <img src="images/logo.svg" alt="Ping logo">
+  
+    <h1>We are launching <strong>soon!</strong></h1>
 
-  We are launching soon!
+    <p>Subscribe and get notified</p>
+  </div>
 
-  Subscribe and get notified
+  <div id="form">
+    <input type="email" name="email" id="email" placeholder="Your email address...">
+  </div>
 
-  Notify Me
+  <div id="button">
+    <button onclick="submit()">Notify me</button>
+  </div>
+
+  <div id="validation">
+    <p> </p>
+  </div>
+
+  <picture>
+    <img src="images/illustration-dashboard.png" alt="illustration dashboard">
+  </picture>
+
+  <div id="icons">
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  </div>
 
   &copy; Copyright Ping. All rights reserved.
 
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/CrehOne">CrehOne</a>.
     </p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

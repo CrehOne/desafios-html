@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif
+}
+
+body {
+    width: 375px;
+    margin: auto;
+    text-align: center;
+}
+
+#mainText img {
+    padding: 40px;
+}
+
+#mainText h1 {
+    font-size: 28px;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    padding: 10px;
+}
+
+#mainText strong {
+    color: black;
+}
+
+#mainText p {
+    font-size: 12px;
+    padding: 10px;
+}
+
+#form {
+    padding: 10px;
+}
+
+#form input {
+    padding: 10px 10px 10px 40px;
+    width: 300px;
+    border-style: none;
+    border: 2px solid hsl(223, 100%, 88%);
+    border-radius: 50px;
+    margin-bottom: 0px;  
+}
+
+#button button {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 10px;
+    border-style: none;
+    border: 2px solid hsl(223, 87%, 63%);
+    border-radius: 50px;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 8px 8px 12px hsla(223, 87%, 63%, 0.284);
+}
+
+#validation {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+picture img{
+    width: 300px;
+    padding: 60px 0px;
+}
+
+#icons {
+    padding: 40px;
+}
+
+#icons i {
+    padding: 10px;
+    color: hsl(223, 87%, 63%);
+    border: 1px solid hsla(223, 100%, 88%, 0.448);
+    border-radius: 50%;
+}
+
+
+
