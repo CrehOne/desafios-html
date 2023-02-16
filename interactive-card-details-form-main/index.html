@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Interactive card details form</title>
 
@@ -16,32 +22,57 @@
 </head>
 <body>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+  <div id="cardBack">
+    <p>000</p>
+  </div>
 
-  000
+  <div id="cardFront">
+    <img src="images/card-logo.svg" alt="" srcset="">
+    <p>0000 0000 0000 0000</p>
+    <div id="cardId">
+      <p>Jane Appleseed</p>
+      <p>00/00</p>
+    </div>
+  </div>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+  <main>
+    <div class="cards">
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+    </div>
+    <div class="form">
+      <div class="cardDetails">
+        <label for="name">Cardholder Name</label>
+        <input type="text" name="name" id="name" placeholder="Cleverson José Lucas">
+        <label for="cardNumber">Card Number</label>
+        <input type="text" name="cardNumber" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000">
+      </div>
 
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
+      <div class="cardData">
+        <div class="cardDate">
+          <label for="expMonth">Exp. Date (MM/YY)</label>
+          <input type="text" name="expDate" id="expMonth" placeholder="MM">
+          <input type="text" name="expDate" id="expYear" placeholder="YY">
+        </div>
+        <div class="cardCvc">
+          <label for="cvc">CVC</label>
+          <input type="text" name="cvc" id="cvc" placeholder="123">
+        </div>
+      </div>
+      
+      <button id="confirmButton">Confirm</button>
+    </div>
+  </main>
 
   <!-- Completed state start -->
 
-  Thank you!
-  We've added your card details
-  Continue
+  <div id="checkIcon">
+    
+  </div>
+  <div class="completeState">
+    <h2>Thank you!</h2>
+    <p>We've added your card details</p>
+    <button id="continueButton">Continue</button>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
