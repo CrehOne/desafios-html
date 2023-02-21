@@ -29,6 +29,7 @@
   <div id="cardFront">
     <img src="images/card-logo.svg" alt="" srcset="">
     <p>0000 0000 0000 0000</p>
+
     <div id="cardId">
       <p>Jane Appleseed</p>
       <p>00/00</p>
@@ -42,33 +43,48 @@
     <div class="form">
       <div class="cardDetails">
         <label for="name">Cardholder Name</label>
-        <input type="text" name="name" id="name" placeholder="Cleverson José Lucas">
+        <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed">
+        <div class="cardNameError">
+
+        </div>
+
         <label for="cardNumber">Card Number</label>
         <input type="text" name="cardNumber" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000">
-      </div>
 
-      <div class="cardData">
-        <div class="cardDate">
-          <label for="expMonth">Exp. Date (MM/YY)</label>
-          <input type="text" name="expDate" id="expMonth" placeholder="MM">
-          <input type="text" name="expDate" id="expYear" placeholder="YY">
-        </div>
-        <div class="cardCvc">
-          <label for="cvc">CVC</label>
-          <input type="text" name="cvc" id="cvc" placeholder="123">
+        <div class="cardNumberError">
+        
         </div>
       </div>
       
-      <button id="confirmButton">Confirm</button>
+
+      <div class="cardData">
+        <div class="cardDate">
+          <div class="labels">
+            <label for="expMonth">Exp. Date (MM/YY)</label>
+            <label for="cvc">CVC</label>
+          </div>
+
+          <div class="dataContainer">
+            <input type="text" name="expDate" id="expMonth" placeholder="MM" size="2" maxlength="2">
+            <input type="text" name="expDate" id="expYear" placeholder="YY" size="2" maxlength="2">
+            <input type="text" name="cvc" id="cvc" placeholder="e.g. 123" size="3" maxlength="3">
+          </div>
+          <div class="cardDataError">
+
+          </div>
+        </div>
+      </div>
+
+      <button id="confirmButton" onclick="validateForm()">Confirm</button>
     </div>
   </main>
 
   <!-- Completed state start -->
-
-  <div id="checkIcon">
-    
-  </div>
   <div class="completeState">
+    <div id="checkIcon">
+      <img src="images/icon-complete.svg" alt="">
+    </div>
+  
     <h2>Thank you!</h2>
     <p>We've added your card details</p>
     <button id="continueButton">Continue</button>
@@ -76,7 +92,9 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">CrehOne</a>.
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

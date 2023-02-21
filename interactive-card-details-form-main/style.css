@@ -46,9 +46,10 @@
 
 #cardId p {
     flex-direction: row;
-    font-size: 12px;
+    font-size: 10px;
     margin: 20px;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 #cardBack {
@@ -74,8 +75,12 @@
 }
 
 .form {
-    padding: 25px;
+    padding: 10px;
     padding-top: 50px;
+    font-size: 10px;
+    margin: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .cardDetails {
@@ -83,7 +88,104 @@
     flex-direction: column;
 }
 
+.cardDetails input {
+    width: 320px;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 7px 0px 15px 0px;
+}
+
 .cardData {
     display: flex;
     flex-direction: row;
 }
+
+.labels {
+    display: flex;
+    flex-direction: row;
+    width: 320px;
+    
+}
+
+.labels label {
+    flex: 1;
+    margin-left: 3px;
+}
+
+.dataContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.dataContainer input {
+    flex: 1;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 7px 15px 15px 0px;
+}
+
+.dataContainer #cvc {
+    flex: 3;
+    margin-right: 0px;
+}
+
+#confirmButton {
+    font-size: 18px;
+    width: 320px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#checkIcon {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.completeState {
+    display: none;
+    padding: 10px;
+    margin: 20px;
+}
+
+.completeState h2{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: hsl(278, 68%, 11%);
+    margin-bottom: 15px;
+}
+
+.completeState p {
+    color: gray;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+#continueButton {
+    font-size: 18px;
+    width: 320px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/*Active States*/
+
+.cardNumberError,
+.cardNameError,
+.cardDataError,
+.cvcError {
+    color: red;
+    font-size: 10px;
+    margin-bottom: 15px;
+    text-transform: none;
+}
+
